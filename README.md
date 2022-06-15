@@ -1,2 +1,0 @@
-# NodejsExpressMovieLists
-CHRUD use Nodejs
