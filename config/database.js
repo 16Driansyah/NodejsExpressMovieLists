@@ -1,6 +1,6 @@
 const mysql = require('mysql');
-//buat konfigurasi koneksi
-const koneksi = mysql.createConnection({
+//make connection configuration
+const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: '',
@@ -8,8 +8,9 @@ const koneksi = mysql.createConnection({
     multipleStatements: true
 });
 // koneksi database
-koneksi.connect((err) => {
+connection.connect(err => {
     if (err) throw err;
-    console.log('mySQL Connected...');
-});
-module.exports = koneksi;
+    console.log('connected to database');
+}
+);
+module.exports = connection;
